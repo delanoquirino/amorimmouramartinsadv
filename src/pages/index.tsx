@@ -1,10 +1,19 @@
-import Head from 'next/head'
-import { Roboto } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import { Roboto } from "next/font/google";
+import styles from "@/styles/Home.module.scss";
+import { Carousel } from "antd";
+import { Carrousel } from "@/components/Carrousel";
 
-const roboto = Roboto({  weight: ['400', '500', '700'], subsets: ['latin'] })
+const roboto = Roboto({ weight: ["400", "500", "700"], subsets: ["latin"] });
 
 export default function Home() {
+  const contentStyle: React.CSSProperties = {
+    height: "500px",
+    color: "#fff",
+    lineHeight: "160px",
+    textAlign: "center",
+    background: "#364d79",
+  };
   return (
     <>
       <Head>
@@ -13,17 +22,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.ico" type="image/ico" />
         <link
-  rel="icon"
-  href="/icon?<generated>"
-  type="image/<generated>"
-  sizes="<generated>"
-/>
+          rel="icon"
+          href="/icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
       </Head>
       <main className={`${styles.main} ${roboto.className}`}>
-          <h1>
-            Ola mundo
-          </h1>
+        <Carrousel/>
       </main>
     </>
-  )
+  );
 }

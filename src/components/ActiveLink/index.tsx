@@ -8,7 +8,7 @@ type ActiveLinkProps = {
 export const ActiveLink = ({href, children, ...rest}: ActiveLinkProps) => {
     const pathname = usePathname();
     const isCurrentPath = pathname === href ;
-    console.log(isCurrentPath)
+    
     
     return <Link {...rest} href={href} style={{color: `${isCurrentPath ? '#cca876' : '#15171b'}`}} >{children}</Link>
 }

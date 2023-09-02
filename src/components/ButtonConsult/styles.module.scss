@@ -1,0 +1,20 @@
+.buttonconsult {
+  background-color: transparent;
+  border: none;
+  a {
+    cursor: pointer;
+    background-color: transparent;
+    border: solid 2px var(--yellow-500);
+    padding: 14px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--white);
+    transition: 0.3s ease-out;
+
+    &:hover {
+      background-color: var(--yellow-500);
+    }
+  }
+}
