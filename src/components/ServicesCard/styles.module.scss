@@ -1,0 +1,74 @@
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 4rem;
+
+  flex-wrap: wrap;
+
+  @media (max-width: 690px) {
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
+.CardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  max-width: 308px;
+  padding: 67px 40px 61px;
+
+  border: 1px solid var(--border);
+  transition: 250ms ease;
+
+  div {
+    width: 25%;
+    background-color: var(--yellow-500);
+    height: 1px;
+    transition: 250ms ease;
+    &:hover {
+      width: 50%;
+    }
+  }
+
+  &:hover {
+    border: 1px solid var(--yellow-500);
+    div {
+      width: 50%;
+    }
+  }
+
+  a {
+    cursor: pointer;
+    font-size: 22px;
+    transition: 250ms ease;
+    &:hover {
+      color: var(--yellow-500);
+    }
+
+    @media (max-width: 690px) {
+      font-size: 18px;
+    }
+  }
+
+  p {
+    text-align: center;
+    font-size: 14px;
+    color: #9f9f9f;
+  }
+
+  @media (max-width: 690px) {
+    font-size: 18px;
+    padding: 30px 35px;
+  }
+}

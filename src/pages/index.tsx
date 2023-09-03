@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import styles from "@/styles/Home.module.scss";
 import { Carousel } from "antd";
 import { Carrousel } from "@/components/Carrousel";
+import { ServicesCard } from "@/components/ServicesCard";
 
 const roboto = Roboto({ weight: ["400", "500", "700"], subsets: ["latin"] });
 
@@ -30,6 +31,9 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${roboto.className}`}>
         <Carrousel/>
+        <section className={styles.servicesSection}>
+          <ServicesCard/>
+        </section>
       </main>
     </>
   );
