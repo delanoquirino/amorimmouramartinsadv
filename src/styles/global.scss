@@ -16,17 +16,6 @@
   --yellow-500: #cca876;
 }
 
-@media (max-width: 1080px) {
-  html {
-    font-size: 93.75%;
-  }
-}
-@media (max-width: 720px) {
-  html {
-    font-size: 87.5%;
-  }
-}
-
 body {
   background-color: var(--white);
 }
@@ -44,4 +33,29 @@ a {
   text-decoration: none;
 }
 
+h1 {
+ font-size: 42px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+span {
+  
+  font-size: 30px;
+}
+
+
+
+@media (max-width: 1080px) {
+  html,body {
+    font-size: 93.75% ;
+  }
+}
+@media (max-width: 720px) {
+  html,body {
+    font-size: 87.5%;
+  }
+}
 

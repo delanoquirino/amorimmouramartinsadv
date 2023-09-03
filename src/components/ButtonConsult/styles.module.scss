@@ -17,4 +17,14 @@
       background-color: var(--yellow-500);
     }
   }
+
+  @media (max-width: 720px) {
+    a{
+      padding: 7px 15px;
+      font-size: 14px;
+    }
+  }
+
+ 
+
 }

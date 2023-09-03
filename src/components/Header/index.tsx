@@ -27,7 +27,7 @@ export  const Header = () => {
                     </nav>
                         <button className={styles.headerButton}>
                             <Link href="/" >
-                            Solicite uma Consulta Gratuita
+                            ENTRE EM CONTATO
                             </Link>
                         </button>
                 </div>
