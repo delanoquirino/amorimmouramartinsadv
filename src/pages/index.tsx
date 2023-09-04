@@ -4,6 +4,7 @@ import styles from "@/styles/Home.module.scss";
 import { Carousel } from "antd";
 import { Carrousel } from "@/components/Carrousel";
 import { ServicesCard } from "@/components/ServicesCard";
+import { AboutUs } from "@/components/AboutUs";
 
 const roboto = Roboto({ weight: ["400", "500", "700"], subsets: ["latin"] });
 
@@ -30,9 +31,12 @@ export default function Home() {
         />
       </Head>
       <main className={`${styles.main} ${roboto.className}`}>
-        <Carrousel/>
+        <Carrousel />
         <section className={styles.servicesSection}>
-          <ServicesCard/>
+          <ServicesCard />
+        </section>
+        <section className={styles.AboutSection}>
+          <AboutUs />
         </section>
       </main>
     </>
