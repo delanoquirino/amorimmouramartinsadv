@@ -6,6 +6,7 @@ import { ServicesCard } from "@/components/ServicesCard";
 import { AboutUs } from "@/components/AboutUs";
 import { TeamCards } from "@/components/TeamCards";
 import { BannerResults } from "@/components/BannerResults";
+import { Testimonials } from "@/components/Testimonials";
 
 const roboto = Roboto({ weight: ["400", "500", "700"], subsets: ["latin"] });
 
@@ -46,6 +47,14 @@ export default function Home() {
 
         <section>
           <BannerResults/>
+        </section>
+
+        <section> 
+          <Testimonials/>
+        </section>
+
+        <section> 
+          <Form/>
         </section>
       </main>
     </>
