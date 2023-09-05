@@ -38,7 +38,7 @@ export const TeamCards = () => {
     <div>
       <div className={`${styles.wrap} ${pt_serif.className}`}>
         {team.map((item) => (
-          <div className={styles.box}>
+          <div key={`"adv" + ${item.name}`} className={styles.box}>
             <div className={styles.boxTop}>
               <Image
                 className={styles.boxImage}

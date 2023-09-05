@@ -1,5 +1,7 @@
 .headerContainer {
   height: 6rem;
+  background-color: var(--white);
+  
 }
 
 .headerContent {
@@ -61,7 +63,6 @@
         transform-origin: 0% 50%;
       }
     }
-   
   }
 }
 

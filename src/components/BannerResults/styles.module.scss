@@ -1,0 +1,40 @@
+.container{
+    height: 400px;
+    margin: 100px 0;
+}
+
+
+.bannerContainer {
+    background-image: url(../../../public//img/parallax.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+}
+
+.bannerContent {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    text-align: center;
+    color: var(--white);
+    padding: 2rem;
+
+    span {
+        display: block;
+        font-size: 42;
+    }
+
+    p {
+        color: var(--gray-100);
+        font-size: 18px;
+    }
+
+    
+    
+}
