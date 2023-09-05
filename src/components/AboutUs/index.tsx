@@ -12,13 +12,14 @@ export const AboutUs = () => {
           <div className={styles.boxCard}>
             <div>
                 <div className={styles.boxContent}>
-                    <h1>About Us</h1>
-                    <p>
+                    <h1 data-aos="fade-up" data-aos-delay="150">
+Sobre Nós</h1>
+                    <p data-aos="fade-up" data-aos-delay="100">
                       Ao colocar seu caso nas mãos de nossos advogados, você está colocando
                       seu caso nas mãos de profissionais comprometidos em alcançar o melhor
                       resultado possível.
                     </p>
-                    <div><cite>João Santos, </cite><small>Especialista em Direito Empresarial</small></div>
+                    <div data-aos="fade-up" data-aos-delay="50"><cite>João Santos, </cite><small>Especialista em Direito Empresarial</small></div>
                     <ButtonConsult/>
                 </div>
                 

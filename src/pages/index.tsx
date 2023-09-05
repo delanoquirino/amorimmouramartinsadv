@@ -5,6 +5,7 @@ import { Carousel } from "antd";
 import { Carrousel } from "@/components/Carrousel";
 import { ServicesCard } from "@/components/ServicesCard";
 import { AboutUs } from "@/components/AboutUs";
+import { TeamCards } from "@/components/TeamCards";
 
 const roboto = Roboto({ weight: ["400", "500", "700"], subsets: ["latin"] });
 
@@ -32,11 +33,15 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${roboto.className}`}>
         <Carrousel />
-        <section className={styles.servicesSection}>
+        <section className={styles.section}>
           <ServicesCard />
         </section>
         <section className={styles.AboutSection}>
           <AboutUs />
+        </section>
+
+        <section className={styles.AboutSection}>
+          <TeamCards/>
         </section>
       </main>
     </>
