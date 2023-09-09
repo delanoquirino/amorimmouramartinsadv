@@ -47,8 +47,8 @@ export const TeamCards = () => {
                 alt="advogado"
               />
               <div className={styles.infoHover}>
-                <p> <FaPhone color={"var(--yellow-500)"}/> {item.phone}</p>
-                <p> <AiOutlineMail color={"var(--yellow-500)"}/> {item.email}</p>
+                <p className={styles.contactAdv}> <FaPhone color={"var(--yellow-500)"}/> {item.phone}</p>
+                <p className={styles.contactAdv}> <AiOutlineMail color={"var(--yellow-500)"}/> {item.email}</p>
               </div>
               <div className={styles.titleFlex}>
                 <h3 className={styles.boxTitle}>{item.name}</h3>

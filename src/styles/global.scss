@@ -17,12 +17,7 @@
   --yellow-500: #cca876;
   --yellow-700: #aa8552;
 
-  --shadow:rgba(
-    0,
-    0,
-    0,
-    0.7
-  );
+  --shadow: rgba(0, 0, 0, 0.7);
 }
 
 body {
@@ -43,7 +38,10 @@ a {
 }
 
 h1 {
- font-size: 42px;
+  font-size: 42px;
+  @media (max-width: 720px) {
+    font-size: 32px;
+  }
 }
 
 h2 {
@@ -51,20 +49,16 @@ h2 {
 }
 
 span {
-  
   font-size: 30px;
 }
 
-
-
 @media (max-width: 1080px) {
-  html,body {
-    font-size: 93.75% ;
+  html {
+    font-size: 93.75%;
   }
 }
 @media (max-width: 720px) {
-  html,body {
+  html {
     font-size: 87.5%;
   }
 }
-

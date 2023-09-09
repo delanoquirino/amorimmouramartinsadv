@@ -7,6 +7,7 @@ import { AboutUs } from "@/components/AboutUs";
 import { TeamCards } from "@/components/TeamCards";
 import { BannerResults } from "@/components/BannerResults";
 import { Testimonials } from "@/components/Testimonials";
+import { Form } from "@/components/Form";
 
 const roboto = Roboto({ weight: ["400", "500", "700"], subsets: ["latin"] });
 
@@ -53,9 +54,10 @@ export default function Home() {
           <Testimonials/>
         </section>
 
-        <section> 
+        <section className={styles.formSection}> 
           <Form/>
         </section>
+    
       </main>
     </>
   );

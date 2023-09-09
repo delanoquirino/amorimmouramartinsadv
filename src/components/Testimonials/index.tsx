@@ -9,6 +9,7 @@ import { Navigation, Autoplay} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { useEffect, useState } from "react";
 
 const lato = Lato({ weight: ["100", "400", "700"], subsets: ["latin"] });
 
@@ -28,33 +29,52 @@ const data = [
   {
     id: 3,
     text: "Agradeço pela orientação legal sólida e pelo acompanhamento atencioso durante todo o processo. Isso realmente aliviou minha ansiedade.",
-    name: "Isabela Santos",
+    name: "Pedro Gomes",
     img: "/img/user3.jpg",
   },
   {
     id: 4,
     text: "Fiquei muito satisfeito com a maneira como o escritório lidou com meu caso. A comunicação foi clara e o atendimento ao cliente foi excepcional.",
-    name: "Pedro Gomes",
+    name: "Isabela Santos",
     img: "/img/user4.jpg",
   },
 ];
 
 export const Testimonials = () => {
+  const [slidePerView,setSlidePerView] =useState(2);
+  useEffect(()=>{
+    function handleResize(){
+      if(window.innerWidth < 1140 ){
+        setSlidePerView(1)
+      } else{
+        setSlidePerView(2)
+      }
+    }
+    handleResize()
+    window.addEventListener("resize", handleResize)
+
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+
+  },[])
   return (
     <div className={`${styles.container} ${lato.className} `}>
       <h1>Depoimentos</h1>
       <div className={styles.carouselContainer}>
         <Swiper
+          
         modules={[Navigation, Autoplay]}
-          slidesPerView={2}
-          spaceBetween={5}
+          slidesPerView={slidePerView}
+        spaceBetween={5}
            autoplay={{
             delay: 3000,
             disableOnInteraction: false,
           }}
+          
         >
           {data.map((item) => (
-            <SwiperSlide key={`${item.name} + ${item.id}`}>
+            <SwiperSlide className={styles.containerSlide} key={`${item.name} + ${item.id}`}>
               <div className={styles.slide}>
                 <BsChatSquareQuote size={50} color={"var(--yellow-700)"} />
                 <p>{item.text}</p>
