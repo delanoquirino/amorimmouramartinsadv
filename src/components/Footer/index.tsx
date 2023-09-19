@@ -2,16 +2,17 @@ import { HiOutlineEnvelope } from "react-icons/hi2";
 import styles from "./styles.module.scss";
 import { BsTelephone } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
-import { PT_Serif } from "next/font/google";
+import { Lato } from "next/font/google";
 
-const pt_serif = PT_Serif({ weight: ["400", "700"], subsets: ["latin"] });
+import { Link } from "react-scroll";
+const lato = Lato({ weight: ["100", "400", "700"], subsets: ["latin"] });
 export const Footer = () => {
   return (
-    <div className={`${styles.footerSection} ${pt_serif.className}`}>
+    <div className={`${styles.footerSection} ${lato.className}`}>
       <div className={styles.footerContainer}>
         <div className={styles.content}>
           <div className={styles.services}>
-            <h4>Santos, Silva & Associados</h4>
+            <h4>Amorim, Moura & Martins</h4>
             <p>
               Se você ou sua empresa enfrentam um desafio jurídico que exige
               aconselhamento sólido e representação qualificada, entre em
@@ -35,16 +36,48 @@ export const Footer = () => {
           <div className={styles.links}>
             <h4>Links Rápidos</h4>
             <p>
-              <a href="#">Home</a>
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+              >
+                Home
+              </Link>
             </p>
             <p>
-              <a href="#">Sobre</a>
+              <Link
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+                to="sobre"
+              >
+                Sobre
+              </Link>
             </p>
             <p>
-              <a href="#">Equipe</a>
+              <Link
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+                to="equipe"
+              >
+                Equipe
+              </Link>
             </p>
             <p>
-              <a href="#">Contato</a>
+              <Link
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+                to="contato"
+              >
+                Contato
+              </Link>
             </p>
           </div>
           <div className={styles.details}>
@@ -52,23 +85,25 @@ export const Footer = () => {
 
             <p>
               <CiLocationOn />
-              <a href="#">+6036 Richmond hwy, Alexandria, VA USA 22303</a>
+              <a href="#">
+                Teresina/PI: Rua Ribamar Pacheco, n° 2469, bairro de Fátima
+              </a>
             </p>
 
             <h4 className={styles.mobile}>Mobile</h4>
             <p>
               <BsTelephone />
-              <a href="#">+91-12225*****</a>
+              <a href="#">(86) 3305-6632</a>
             </p>
             <h4 className={styles.email}>Email</h4>
             <p>
               <HiOutlineEnvelope />
-              <a href="#">farazc60@gmail.com</a>
+              <a href="#">amm.advogados@hotmail.com</a>
             </p>
           </div>
         </div>
         <div className={styles.footer}>
-          <hr />© 2022 Santos, Silva & Associados.
+          <hr />© 2022 Amorim, Moura & Martins .
         </div>
       </div>
     </div>

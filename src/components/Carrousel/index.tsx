@@ -9,7 +9,7 @@ const pt_serif = PT_Serif({ weight: ["400", "700"], subsets: ["latin"] });
 export const Carrousel = () => {
 
   return (
-    <Carousel autoplay>
+    <Carousel autoplay id="home" className={styles.carrousel}>
       <div
         className={`${styles.contentStyleOne} ${styles.contentStyle} ${pt_serif.className}`}
       >

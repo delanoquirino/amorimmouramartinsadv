@@ -6,7 +6,7 @@ const pt_serif = PT_Serif({ weight: ["400", "700"], subsets: ["latin"] });
 
 export const Form = () => {
     return (
-        <div className={`${styles.container} ${pt_serif.className}`}>
+        <div className={`${styles.container} ${pt_serif.className}`} id="contato">
             
             <form className={styles.form}>
                     <h1>Consulta grátis</h1>

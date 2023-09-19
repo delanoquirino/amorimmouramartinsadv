@@ -12,6 +12,8 @@
   max-width: 1120px;
   margin: 0 auto;
   padding: 0 2rem;
+
+  line-height: 1.5rem;
 }
 
 .footerContainer .heading {
@@ -35,6 +37,7 @@
   a {
     text-decoration: none;
     color: #666c84;
+    border-bottom: 1px solid transparent;
 
     &:hover {
       border-bottom: 1px solid var(--yellow-700);

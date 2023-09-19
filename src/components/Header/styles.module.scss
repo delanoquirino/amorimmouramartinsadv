@@ -1,12 +1,19 @@
 .headerContainer {
-  height: 6rem;
+  height: 4rem;
   background-color: var(--white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2000;
+  border-bottom: 1px solid var(--yellow-500);
   
 }
 
 .headerContent {
   max-width: 1120px;
-  height: 6rem;
+  height: 4rem;
   margin: 0 auto;
   padding: 0 2rem;
   display: flex;
@@ -20,11 +27,15 @@
   }
 
   nav {
-    height: 6rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 400;
+
+    a {
+      cursor: pointer;
+    }
   }
 }
 
