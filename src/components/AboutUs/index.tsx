@@ -7,7 +7,7 @@ import { PT_Serif } from "next/font/google";
 const pt_serif = PT_Serif({ weight: ["400", "700"], subsets: ["latin"] });
 export const AboutUs = () => {
   return (
-    <div className={`${styles.aboutContainer} ${pt_serif.className}`}>
+    <div className={`${styles.aboutContainer} ${pt_serif.className}`} id="sobre">
       <div className={styles.aboutImage}>
           <div className={styles.boxCard}>
             <div>
@@ -25,7 +25,7 @@ Sobre Nós</h1>
                 
             </div>
             <div className={styles.ceoImg}>
-                <Image src={oldman} alt="foto do ceo do escritorio" fill={true}/>
+                <Image data-aos="fade-up" data-aos-delay="100" src={oldman} alt="foto do ceo do escritorio" fill={true}/>
             </div>
 
           </div>

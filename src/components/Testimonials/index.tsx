@@ -4,11 +4,11 @@ import { Lato } from "next/font/google";
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay} from 'swiper/modules';
+import { Navigation, Autoplay, Scrollbar } from "swiper/modules";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { useEffect, useState } from "react";
 
 const lato = Lato({ weight: ["100", "400", "700"], subsets: ["latin"] });
@@ -41,50 +41,47 @@ const data = [
 ];
 
 export const Testimonials = () => {
-  const [slidePerView,setSlidePerView] =useState(2);
-  useEffect(()=>{
-    function handleResize(){
-      if(window.innerWidth < 1140 ){
-        setSlidePerView(1)
-      } else{
-        setSlidePerView(2)
+  const [slidePerView, setSlidePerView] = useState(2);
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 1140) {
+        setSlidePerView(1);
+      } else {
+        setSlidePerView(2);
       }
     }
-    handleResize()
-    window.addEventListener("resize", handleResize)
+    handleResize();
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize)
-    }
-
-  },[])
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className={`${styles.container} ${lato.className} `}>
       <h1>Depoimentos</h1>
       <div className={styles.carouselContainer}>
         <Swiper
-          
-        modules={[Navigation, Autoplay]}
+          modules={[Navigation, Autoplay, Scrollbar]}
           slidesPerView={slidePerView}
-        spaceBetween={5}
-           autoplay={{
+          spaceBetween={5}
+          scrollbar={{ draggable: true }}
+          autoplay={{
             delay: 3000,
             disableOnInteraction: false,
           }}
-          
         >
           {data.map((item) => (
-            <SwiperSlide className={styles.containerSlide} key={`${item.name} + ${item.id}`}>
+            <SwiperSlide
+              className={styles.containerSlide}
+              key={`${item.name} + ${item.id}`}
+            >
               <div className={styles.slide}>
                 <BsChatSquareQuote size={50} color={"var(--yellow-700)"} />
                 <p>{item.text}</p>
                 <div className={styles.slideContent}>
                   <div className={styles.userImg}>
-                    <Image
-                      src={item.img}
-                      alt={item.name}
-                      fill={true}
-                    />
+                    <Image src={item.img} alt={item.name} fill={true} />
                   </div>
                   <span>{item.name}</span>
                 </div>

@@ -28,13 +28,13 @@
   max-width: 308px;
   padding: 67px 40px 61px;
 
-  border: 1px solid var(--border);
+  border: 2px solid var(--border);
   transition: 250ms ease;
 
   div {
     width: 25%;
     background-color: var(--yellow-500);
-    height: 1px;
+    height: 2px;
     
     transition: 250ms ease;
     &:hover {
@@ -45,7 +45,7 @@
   }
 
   &:hover {
-    border: 1px solid var(--yellow-500);
+    border: 2px solid var(--yellow-500);
     div {
       width: 50%;
     }

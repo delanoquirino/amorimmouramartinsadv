@@ -33,8 +33,8 @@ export const BannerResults = () => {
         <div className={`${styles.container} ${pt_serif.className}`}>
             <div className={styles.bannerContainer}>
                 <div className={styles.bannerContent}>
-                    {results.map((item) => (
-                        <div data-aos="fade-up">
+                    {results.map((item, i) => (
+                        <div key={i} data-aos="fade-up">
                             {item.icon}
                             <span data-aos="fade-up">{item.string}</span>
                             <p data-aos="fade-up">{item.info}</p>
