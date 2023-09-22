@@ -8,7 +8,8 @@ import { Lato } from "next/font/google";
 const lato = Lato({ weight: ["100", "400", "700"], subsets: ["latin"] });
 
 interface SidebarProps {
-    active:  boolean;
+    active: (isActive: boolean) => void;
+   
   }
 
 
@@ -21,6 +22,7 @@ export const Sidebar = ({ active}: SidebarProps ) => {
     <div
       sidebar={active}
       className={`${styles.container} ${lato.className}`}
+      
     >
       <AiOutlineClose onClick={closeSidebar} />
       <div className={styles.content}>
