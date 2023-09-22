@@ -20,86 +20,85 @@ export const Footer = () => {
               um advogado.
             </p>
           </div>
-          <div className={styles.socialMedia}>
-            <h4>Social</h4>
-            <p>
-              <a href="#">Linkedin</a>
-            </p>
-
-            <p>
-              <a href="">Facebook</a>
-            </p>
-            <p>
-              <a href="">Instagram</a>
-            </p>
-          </div>
-          <div className={styles.links}>
-            <h4>Links Rápidos</h4>
-            <p>
-              <Link
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={500}
-              >
-                Home
-              </Link>
-            </p>
-            <p>
-              <Link
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={500}
-                to="sobre"
-              >
-                Sobre
-              </Link>
-            </p>
-            <p>
-              <Link
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={500}
-                to="equipe"
-              >
-                Equipe
-              </Link>
-            </p>
-            <p>
-              <Link
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={500}
-                to="contato"
-              >
-                Contato
-              </Link>
-            </p>
-          </div>
-          <div className={styles.details}>
-            <h4 className={styles.address}>Endereço</h4>
-
-            <p>
-              <CiLocationOn />
-              <a href="#">
-                Teresina/PI: Rua Ribamar Pacheco, n° 2469, bairro de Fátima
-              </a>
-            </p>
-
-            <h4 className={styles.mobile}>Mobile</h4>
-            <p>
-              <BsTelephone />
-              <a href="#">(86) 3305-6632</a>
-            </p>
-            <h4 className={styles.email}>Email</h4>
-            <p>
-              <HiOutlineEnvelope />
-              <a href="#">amm.advogados@hotmail.com</a>
-            </p>
+          <div className={styles.footerGrid}>
+            <div className={styles.socialMedia}>
+              <h4>Social</h4>
+              <p>
+                <a href="#">Linkedin</a>
+              </p>
+              <p>
+                <a href="">Facebook</a>
+              </p>
+              <p>
+                <a href="">Instagram</a>
+              </p>
+            </div>
+            <div className={styles.links}>
+              <h4>Links Rápidos</h4>
+              <p>
+                <Link
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                >
+                  Home
+                </Link>
+              </p>
+              <p>
+                <Link
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                  to="sobre"
+                >
+                  Sobre
+                </Link>
+              </p>
+              <p>
+                <Link
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                  to="equipe"
+                >
+                  Equipe
+                </Link>
+              </p>
+              <p>
+                <Link
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                  to="contato"
+                >
+                  Contato
+                </Link>
+              </p>
+            </div>
+            <div className={styles.details}>
+              <h4 className={styles.address}>Endereço</h4>
+              <p>
+                <CiLocationOn />
+                <a href="#">
+                  Teresina/PI: Rua Ribamar Pacheco, n° 2469, bairro de Fátima
+                </a>
+              </p>
+              <h4 className={styles.mobile}>Mobile</h4>
+              <p>
+                <BsTelephone />
+                <a href="#">(86) 3305-6632</a>
+              </p>
+              <h4 className={styles.email}>Email</h4>
+              <p>
+                <HiOutlineEnvelope />
+                <a href="#">amm.advogados@hotmail.com</a>
+              </p>
+            </div>
           </div>
         </div>
         <div className={styles.footer}>

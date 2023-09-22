@@ -61,7 +61,7 @@
 
       &:after {
         display: block;
-        content: "";
+       
         border-bottom: solid 3px var(--yellow-500);
         transform: scaleX(0);
         transition: transform 250ms ease-in-out;
@@ -75,6 +75,9 @@
       }
     }
   }
+  @media(max-width: 870px) {
+    display: none;
+}
 }
 
 .headerButton {
@@ -97,16 +100,7 @@
 }
 
 @media (max-width: 870px) {
-  .headerContainer {
-    height: 7rem;
-    padding: 0.5rem 0;
-  }
 
-  .headerContent {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
 
   .headerNav {
     nav {
@@ -117,5 +111,24 @@
   }
   .headerButton {
     display: none;
+  }
+}
+
+
+
+.navBar {
+  svg {
+    display: none;
+  }
+  @media(max-width: 870px) {
+      svg {
+     
+      display: block;
+      color: black;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      
+    }
   }
 }

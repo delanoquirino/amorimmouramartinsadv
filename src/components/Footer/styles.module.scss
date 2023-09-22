@@ -55,10 +55,12 @@
 
 
 .details {
+  
   p {
     display: flex;
     align-items: center;
     gap: .5rem;
+    
   }
 }
 
@@ -71,7 +73,7 @@
   margin: 2rem 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 950px) {
   .content {
     display: flex;
     flex-direction: column;
@@ -99,4 +101,15 @@
   .footerContainer {
     position: unset;
   }
+}
+
+.footerGrid {
+  display: flex;
+  gap: 5rem;
+
+  @media (max-width: 950px) {
+    
+    flex-wrap: wrap;
+  }
+
 }

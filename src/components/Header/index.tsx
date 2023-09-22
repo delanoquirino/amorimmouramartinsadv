@@ -5,10 +5,15 @@ import { Link } from "react-scroll";
 
 import { Lato } from "next/font/google";
 import logo from "../../../public/logo.png";
+import { useState } from "react";
+import { Sidebar } from "../Sidebar";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const lato = Lato({ weight: ["100", "400", "700"], subsets: ["latin"] });
 
 export const Header = () => {
+  const [sidebar, setSidebar] = useState(false);
+  const showSidebar = () => setSidebar(!sidebar);
   return (
     <header className={`${styles.headerContainer} ${lato.className}`}>
       <div className={styles.headerContent}>
@@ -23,6 +28,10 @@ export const Header = () => {
           <Image src={logo} alt="logo Amorim, Moura & Martins" />
           <p>Amorim, Moura & Martins</p>
         </Link>
+        <div className={styles.navBar}>
+          <GiHamburgerMenu onClick={showSidebar} />
+          {sidebar && <Sidebar active={setSidebar} />}
+        </div>
         <div className={styles.headerNav}>
           <nav>
             <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
@@ -68,6 +77,7 @@ export const Header = () => {
             </Link>
           </button>
         </div>
+        
       </div>
     </header>
   );
