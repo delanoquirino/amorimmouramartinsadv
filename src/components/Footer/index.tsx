@@ -83,19 +83,19 @@ export const Footer = () => {
             <div className={styles.details}>
               <h4 className={styles.address}>Endereço</h4>
               <p>
-                <CiLocationOn />
+                <CiLocationOn size={14} color="#CCA876"/>
                 <a href="#">
                   Teresina/PI: Rua Ribamar Pacheco, n° 2469, bairro de Fátima
                 </a>
               </p>
               <h4 className={styles.mobile}>Mobile</h4>
               <p>
-                <BsTelephone />
+                <BsTelephone size={14} color="#CCA876" />
                 <a href="#">(86) 3305-6632</a>
               </p>
               <h4 className={styles.email}>Email</h4>
               <p>
-                <HiOutlineEnvelope />
+                <HiOutlineEnvelope size={14} color="#CCA876"/>
                 <a href="#">amm.advogados@hotmail.com</a>
               </p>
             </div>

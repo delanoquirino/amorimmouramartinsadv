@@ -29,7 +29,7 @@ export const Header = () => {
           <p>Amorim, Moura & Martins</p>
         </Link>
         <div className={styles.navBar}>
-          <GiHamburgerMenu onClick={showSidebar} />
+          <GiHamburgerMenu size={20} onClick={showSidebar} />
           {sidebar && <Sidebar active={setSidebar} />}
         </div>
         <div className={styles.headerNav}>

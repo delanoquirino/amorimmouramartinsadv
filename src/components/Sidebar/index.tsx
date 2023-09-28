@@ -24,7 +24,7 @@ export const Sidebar = ({ active}: SidebarProps ) => {
       className={`${styles.container} ${lato.className}`}
       
     >
-      <AiOutlineClose onClick={closeSidebar} />
+      <AiOutlineClose size={20} onClick={closeSidebar} />
       <div className={styles.content}>
         <Link
           to="about"
