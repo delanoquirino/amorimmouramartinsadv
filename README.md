@@ -24,7 +24,7 @@ Este projeto envolve o desenvolvimento de um site para um escritório de advocac
 
 1. Clone this repo
 ```bash
-git clone https://github.com/delanoquirino/teste-leadster.git
+git clone https://github.com/delanoquirino/amorimmouramartinsadv.git
 ```
 
 2. Install dependencies
