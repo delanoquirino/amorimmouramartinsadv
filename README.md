@@ -2,7 +2,7 @@
 
 ### Layout
 
-![Layout](public/readme/ammadv1.png.png)
+![Layout](public/readme/ammadv1.png)
 
 ### 🧠 About
 
