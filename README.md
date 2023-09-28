@@ -3,9 +3,6 @@
 ### Layout
 
 ![Layout](public/readme/ammadv1.png.png)
-![Layout](public/readme/ammadv2.png.png)
-![Layout](public/readme/ammadv3.png.png)
-![Layout](public/readme/ammadvmobile.png)
 
 ### 🧠 About
 
