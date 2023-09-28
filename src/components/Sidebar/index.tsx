@@ -20,7 +20,7 @@ export const Sidebar = ({ active}: SidebarProps ) => {
 
   return (
     <div
-      sidebar={active}
+      
       className={`${styles.container} ${lato.className}`}
       
     >
